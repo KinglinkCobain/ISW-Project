@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Hola PHPUnit, Heroku CI es de paga xd
                 </div>
 
                 <div class="links">
