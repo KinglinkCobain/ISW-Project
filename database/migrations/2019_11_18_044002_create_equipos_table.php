@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAreasTable extends Migration
+class CreateEquiposTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateAreasTable extends Migration
      */
     public function up()
     {
-        Schema::create('areas', function (Blueprint $table) {
-            $table->bigIncrements('idArea');
-            $table->string('nombre');
+        Schema::create('equipos', function (Blueprint $table) {
+            $table->bigIncrements('idEquipo');
+            $->Integer('idDepartamento');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateAreasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('areas');
+        Schema::dropIfExists('equipos');
     }
 }

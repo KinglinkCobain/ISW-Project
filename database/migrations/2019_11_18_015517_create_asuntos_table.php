@@ -14,7 +14,10 @@ class CreateAsuntosTable extends Migration
     public function up()
     {
         Schema::create('asuntos', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('idAsunto');
+            $table->string('Tipo');
+            $table->Integer('idArea');
+            $table->String('Estado');
             $table->timestamps();
         });
     }
