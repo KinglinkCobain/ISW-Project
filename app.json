@@ -1,0 +1,17 @@
+ 
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "ISW-Project",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
